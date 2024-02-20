@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, Card, CardBody, CardTitle, ListGroup } from "react-bootstrap";
+import MyVirtualizedList from './components/MyVirtualizedList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Card className="mt-5">
+        <CardTitle className="text-center mt-2">List Visualization</CardTitle>
+        <CardBody>         
+          <MyVirtualizedList></MyVirtualizedList>
+        </CardBody>
+      </Card>
+    </Container>
   );
 }
 
